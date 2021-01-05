@@ -1,6 +1,5 @@
 # My Diary 
-## A basic django app penning your thoughts. 
-
+A simple django app penning your thoughts. 
 Clone the project using git through by following command . 
 
 <code> git clone https://github.com/ihamzak/djangopractice.git </code>
@@ -11,10 +10,20 @@ To run the project make sure Django is installed. If you are new to Django use t
 
 <code>pip install Django </code>
 
-If the system doesn't allow you to install Django then use the following commans. 
+If the system doesn't allow you to install Django then use the following commands. 
 
 <code>pip install Django --user </code>
 
 
-#How to run the project ? 
+### How to run the project ? 
 
+Open the prject in command prompt/ terminal and then run the following command to run it locally. 
+
+<code>python manage.py runserver</code>
+
+If you want to go to admin area used the /admin endpoint and use the following credietails. 
+username = demo 
+password = Demo123456
+
+To create a new superuser use the following commands. 
+<code>python manage.py createsuperuser</code>
