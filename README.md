@@ -22,7 +22,7 @@ Open the prject in command prompt/ terminal and then run the following command t
 
 <code>python manage.py runserver</code>
 
-If you want to go to admin area used the /admin endpoint and use the following credietails. 
+If you want to go to admin area use the <code>/admin</code> endpoint and use the following credietails. 
 
 username : demo 
 
