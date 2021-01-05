@@ -1,5 +1,5 @@
 # My Diary 
-A simple django app penning your thoughts. 
+A simple django app for penning your thoughts. 
 
 Clone the project using git through by following command . 
 
