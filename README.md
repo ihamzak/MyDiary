@@ -23,7 +23,9 @@ Open the prject in command prompt/ terminal and then run the following command t
 <code>python manage.py runserver</code>
 
 If you want to go to admin area used the /admin endpoint and use the following credietails. 
-username = demo 
-password = Demo123456
+
+username : demo 
+
+password : Demo123456
 
 To create a new superuser use <code>python manage.py createsuperuser</code> command. 
