@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'add' %}">My Diary</a>
+            <a class="navbar-brand" href="{% url 'home' %}">My Diary</a>
         </div>
     </nav>
 
@@ -26,7 +26,7 @@
 
     <div class="container">
          
-        <form method="POST" action="{% url 'home' %}">
+        <form method="POST" action="{% url 'add' %}">
             {% csrf_token %}
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label"> Your Thoughts today ! </label>
