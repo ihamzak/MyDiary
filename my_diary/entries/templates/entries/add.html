@@ -18,18 +18,24 @@
 
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}">My Diary</a>
+            <a class="navbar-brand" href="{% url 'add' %}">My Diary</a>
         </div>
     </nav>
 
     <br>
 
     <div class="container">
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">What's on your mind today ? </label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+         
+        <form method="POST" action="{% url 'home' %}">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"> Your Thoughts today ! </label>
+                {{ form.text }}
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
     </div>
 
 

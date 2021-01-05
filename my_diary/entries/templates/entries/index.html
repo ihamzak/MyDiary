@@ -22,45 +22,28 @@
         </div>
     </nav>
     <br>
+
     <div class="container">
         <!-- Content here -->
         <a class="btn btn-primary" href="{% url 'add' %}">Add to diary</a>
         <br>
         <br>
-        <div class="card">
-            <div class="card-header">
-                <strong>January 04, 2021 01:55 AM </strong>
-            </div>
-            <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                </blockquote>
-            </div>
-        </div>
 
-        <br>
-        <div class="card">
-            <div class="card-header">
-                <strong>January 04, 2021 01:55 AM </strong>
-            </div>
-            <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                </blockquote>
-            </div>
-        </div>
+        {% for entry in entries %}
 
-        <br>
         <div class="card">
             <div class="card-header">
-                <strong>January 04, 2021 01:55 AM </strong>
+                <strong>{{ entry.date_posted }} </strong>
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <p>{{ entry.text }}</p>
                 </blockquote>
             </div>
         </div>
+        <br>
+
+        {% endfor %}
 
     </div>
 
