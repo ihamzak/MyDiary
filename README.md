@@ -3,7 +3,7 @@ A simple django app penning your thoughts.
 
 Clone the project using git through by following command . 
 
-<code> git clone https://github.com/ihamzak/djangopractice.git </code>
+<code> git clone https://github.com/ihamzak/mydiary.git </code>
 
 Or simply download the zip folder of the project and unzip in diretory of you choice. 
 
