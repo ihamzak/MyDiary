@@ -18,13 +18,13 @@
 
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">My Diary</a>
+            <a class="navbar-brand" href="{% url 'home'%}">My Diary</a>
         </div>
     </nav>
     <br>
     <div class="container">
         <!-- Content here -->
-        <a class="btn btn-primary" href="#">Add to diary</a>
+        <a class="btn btn-primary" href="{% url 'add' %}">Add to diary</a>
         <br>
         <br>
         <div class="card">
