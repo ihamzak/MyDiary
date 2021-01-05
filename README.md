@@ -1,5 +1,6 @@
 # My Diary 
 A simple django app penning your thoughts. 
+
 Clone the project using git through by following command . 
 
 <code> git clone https://github.com/ihamzak/djangopractice.git </code>
@@ -25,5 +26,4 @@ If you want to go to admin area used the /admin endpoint and use the following c
 username = demo 
 password = Demo123456
 
-To create a new superuser use the following commands. 
-<code>python manage.py createsuperuser</code>
+To create a new superuser use <code>python manage.py createsuperuser</code> command. 
